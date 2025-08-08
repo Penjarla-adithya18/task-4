@@ -1,0 +1,109 @@
+/* Base Styles */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #ff9933;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://images.unsplash.com/photo-1506015391300-4802dc74de2e?w=1200') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+.hero h1 {
+    font-size: 2.5rem;
+}
+.hero .btn {
+    display: inline-block;
+    background: #138808;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.hero .btn:hover {
+    background: #0f6606;
+}
+
+/* Content Section */
+.content-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    max-width: 300px;
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+.card h3 {
+    margin: 10px 0;
+}
+.card p {
+    padding: 0 10px 20px;
+}
+
+/* Footer */
+footer {
+    background: #ff9933;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    header nav {
+        margin-top: 10px;
+    }
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
